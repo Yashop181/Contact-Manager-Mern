@@ -1,0 +1,29 @@
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card {
+    width: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        width: 100%;
+    }
+}
